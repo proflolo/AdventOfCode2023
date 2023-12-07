@@ -30,6 +30,18 @@
     <ClCompile Include="Challenge3.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="Challenge5.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenge4.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenge6.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Challenge7.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Challenge1.h">
@@ -44,5 +56,27 @@
     <ClInclude Include="Challenge3.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Challenge5.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenge4.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenge6.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Challenge7.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input5_sample.txt" />
+    <Text Include="input5.txt" />
+    <Text Include="input4.txt" />
+    <Text Include="input4_sample.txt" />
+    <Text Include="input6.txt" />
+    <Text Include="input6_sample.txt" />
+    <Text Include="input7.txt" />
+    <Text Include="input7_sample.txt" />
   </ItemGroup>
 </Project>

@@ -133,6 +133,10 @@
     <ClCompile Include="Challenge1.cpp" />
     <ClCompile Include="Challenge2.cpp" />
     <ClCompile Include="Challenge3.cpp" />
+    <ClCompile Include="Challenge4.cpp" />
+    <ClCompile Include="Challenge5.cpp" />
+    <ClCompile Include="Challenge6.cpp" />
+    <ClCompile Include="Challenge7.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -142,7 +146,21 @@
     <ClInclude Include="Challenge1.h" />
     <ClInclude Include="Challenge2.h" />
     <ClInclude Include="Challenge3.h" />
+    <ClInclude Include="Challenge4.h" />
+    <ClInclude Include="Challenge5.h" />
+    <ClInclude Include="Challenge6.h" />
+    <ClInclude Include="Challenge7.h" />
     <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input4.txt" />
+    <Text Include="input4_sample.txt" />
+    <Text Include="input5.txt" />
+    <Text Include="input5_sample.txt" />
+    <Text Include="input6.txt" />
+    <Text Include="input6_sample.txt" />
+    <Text Include="input7.txt" />
+    <Text Include="input7_sample.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
