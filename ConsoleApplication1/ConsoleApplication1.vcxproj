@@ -121,6 +121,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,12 +132,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Challenge1.cpp" />
+    <ClCompile Include="Challenge10.cpp" />
+    <ClCompile Include="Challenge11.cpp" />
+    <ClCompile Include="Challenge12.cpp" />
     <ClCompile Include="Challenge2.cpp" />
     <ClCompile Include="Challenge3.cpp" />
     <ClCompile Include="Challenge4.cpp" />
     <ClCompile Include="Challenge5.cpp" />
     <ClCompile Include="Challenge6.cpp" />
     <ClCompile Include="Challenge7.cpp" />
+    <ClCompile Include="Challenge8.cpp" />
+    <ClCompile Include="Challenge9.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -144,15 +150,26 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Challenge1.h" />
+    <ClInclude Include="Challenge10.h" />
+    <ClInclude Include="Challenge11.h" />
+    <ClInclude Include="Challenge12.h" />
     <ClInclude Include="Challenge2.h" />
     <ClInclude Include="Challenge3.h" />
     <ClInclude Include="Challenge4.h" />
     <ClInclude Include="Challenge5.h" />
     <ClInclude Include="Challenge6.h" />
     <ClInclude Include="Challenge7.h" />
+    <ClInclude Include="Challenge8.h" />
+    <ClInclude Include="Challenge9.h" />
     <ClInclude Include="StdAfx.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="input10.txt" />
+    <Text Include="input10_sample.txt" />
+    <Text Include="input11.txt" />
+    <Text Include="input11_sample.txt" />
+    <Text Include="input12.txt" />
+    <Text Include="input12_sample.txt" />
     <Text Include="input4.txt" />
     <Text Include="input4_sample.txt" />
     <Text Include="input5.txt" />
@@ -161,6 +178,10 @@
     <Text Include="input6_sample.txt" />
     <Text Include="input7.txt" />
     <Text Include="input7_sample.txt" />
+    <Text Include="input8.txt" />
+    <Text Include="input8_sample.txt" />
+    <Text Include="input9.txt" />
+    <Text Include="input9_sample.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

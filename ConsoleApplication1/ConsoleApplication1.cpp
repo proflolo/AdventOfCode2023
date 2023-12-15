@@ -1,9 +1,9 @@
 #include "StdAfx.h"
-#include "Challenge7.h"
+#include "Challenge10.h"
 
 int main(int argc, char** argv)
 {
-    challenge7::Part2();
+    challenge10::Part2();
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar

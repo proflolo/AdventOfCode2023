@@ -10,8 +10,13 @@
 #include <unordered_set>
 #include <set>
 #include <unordered_map>
+#include <map>
 #include <tuple>
 #include <optional>
+#include <numeric>
+#include <algorithm>
+#include <vector>
+#include <array>
 
 inline std::pair<std::string_view, std::string_view> divide(const std::string& i_chars, const std::string_view& i_str)
 {
@@ -62,10 +67,10 @@ inline int stoi(std::string_view i_str)
 }
 
 template<typename T>
-inline T ston(std::string_view i_str)
+inline T ston(std::string_view i_str, int base = 10)
 {
     T result = 0;
-    std::from_chars(i_str.data(), i_str.data() + i_str.size(), result);
+    std::from_chars(i_str.data(), i_str.data() + i_str.size(), result, base);
     return result;
 }
 
@@ -75,17 +80,26 @@ inline std::tuple<S, Strings...> _divide(std::string_view i_chars, std::string_v
 {
     if constexpr (sizeof...(Strings) == 0)
     {
-        return { i_str };
-    }
-    else
-    {
         auto pos = i_str.find_first_of(i_chars);
         if (pos == std::string_view::npos)
         {
+            return { i_str };
+        }
+        else
+        {
+            return { std::string_view(&i_str[0], pos) };
+        }
+    }
+    else
+    {
+        auto firstPos = i_str.find_first_of(i_chars);
+        auto lastPos = i_str.find_first_not_of(i_chars, firstPos) - 1;
+        if (lastPos == std::string_view::npos)
+        {
             return std::tuple<S, Strings...>();
         }
-        auto res = _divide<Strings...>(i_chars, std::string_view(&i_str[pos] + 1, i_str.size() - (pos + 1)));
-        return std::tuple_cat(std::make_tuple(std::string_view(&i_str[0], pos)), res);
+        auto res = _divide<Strings...>(i_chars, std::string_view(&i_str[lastPos] + 1, i_str.size() - (lastPos + 1)));
+        return std::tuple_cat(std::make_tuple(std::string_view(&i_str[0], firstPos)), res);
     }
 }
 
@@ -109,5 +123,13 @@ inline auto fragment<3, unsigned long long>(std::string_view i_chars, std::strin
     using T = unsigned long long;
     auto t = fragment<3, std::string_view>(i_chars, i_source);
     return std::make_tuple(ston<T>(std::get<0>(t)), ston<T>(std::get<1>(t)) , ston<T>(std::get<2>(t)));
+}
+
+template<>
+inline auto fragment<3, int>(std::string_view i_chars, std::string_view i_source)
+{
+    using T = int;
+    auto t = fragment<3, std::string_view>(i_chars, i_source);
+    return std::make_tuple(ston<T>(std::get<0>(t)), ston<T>(std::get<1>(t)), ston<T>(std::get<2>(t)));
 }
 
