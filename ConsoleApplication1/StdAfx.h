@@ -18,6 +18,9 @@
 #include <vector>
 #include <array>
 
+using uint64 = unsigned long long;
+using int64 = long long;
+
 inline std::pair<std::string_view, std::string_view> divide(const std::string& i_chars, const std::string_view& i_str)
 {
     auto pos = i_str.find_first_of(i_chars);
