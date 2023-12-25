@@ -137,6 +137,8 @@
     <ClCompile Include="Challenge12.cpp" />
     <ClCompile Include="Challenge13.cpp" />
     <ClCompile Include="Challenge14.cpp" />
+    <ClCompile Include="Challenge15.cpp" />
+    <ClCompile Include="Challenge16.cpp" />
     <ClCompile Include="Challenge2.cpp" />
     <ClCompile Include="Challenge3.cpp" />
     <ClCompile Include="Challenge4.cpp" />
@@ -157,6 +159,8 @@
     <ClInclude Include="Challenge12.h" />
     <ClInclude Include="Challenge13.h" />
     <ClInclude Include="Challenge14.h" />
+    <ClInclude Include="Challenge15.h" />
+    <ClInclude Include="Challenge16.h" />
     <ClInclude Include="Challenge2.h" />
     <ClInclude Include="Challenge3.h" />
     <ClInclude Include="Challenge4.h" />
@@ -178,6 +182,10 @@
     <Text Include="input13_sample.txt" />
     <Text Include="input14.txt" />
     <Text Include="input14_sample.txt" />
+    <Text Include="input15.txt" />
+    <Text Include="input15_sample.txt" />
+    <Text Include="input16.txt" />
+    <Text Include="input16_sample.txt" />
     <Text Include="input4.txt" />
     <Text Include="input4_sample.txt" />
     <Text Include="input5.txt" />
